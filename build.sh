@@ -8,10 +8,10 @@ if [ ! -r $JETTY/lib/servlet-api-3.0.jar ] ; then
     exit -1
 fi
 
-if javac -cp $JETTY/lib/servlet-api-3.0.jar  WEB-INF/classes/HelloWebServlet.java ; then
+
+if javac -cp $JETTY/lib/servlet-api-3.0.jar src/WEB-INF/classes/HelloWebServlet.java ; then
     rm -rf build/
-    mkdir build
-    cp -r WEB-INF build/
+    cp -r src/ build/
     find build/ -type f -name '*.java' | xargs rm
     cd build/
     zip -r HelloWebServlet.war .
