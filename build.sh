@@ -1,6 +1,5 @@
 #!/bin/bash
 
-export JETTY=~/java-jetty/jetty-distribution-9.0.0.RC0
 export JETTY=jetty-distribution-9.0.0.RC0
 
 if [ ! -r $JETTY/lib/servlet-api-3.0.jar ] ; then
