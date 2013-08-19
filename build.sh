@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export JETTY=jetty-distribution-9.0.0.RC0
+export JETTY=jetty
 
 if [ ! -r $JETTY/lib/servlet-api-3.0.jar ] ; then
     echo "Can't find J2EE Servlet API library (<JETTY>/lib/servlet-api-3.0.jar)"

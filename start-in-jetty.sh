@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export JETTY=jetty-distribution-9.0.0.RC0
+export JETTY=jetty
 
 if [ ! -d $JETTY ] ; then
     echo "<JETTY> not found. Exiting."
